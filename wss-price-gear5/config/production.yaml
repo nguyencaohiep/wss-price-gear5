@@ -1,0 +1,42 @@
+## Server Configuration
+SERVER_NAME: "crawl_price_3rd"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8001"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Database Configuration
+DB_DRIVER: "postgres"
+DB_HOST: "13.231.223.177"
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "@@Gear5eb5dfdcf@@"
+DB_NAME: "gear5_data"
+
+# Redis Cache Configuration
+REMOTE_CACHE_DRIVER: "redis"
+REMOTE_CACHE_HOST: "127.0.0.1"
+REMOTE_CACHE_PORT: "6379"
+REMOTE_CACHE_PASSWORD: "0LZLVx3dl8W6FEDrc/iA1yPDn26+3c4Auo1+l/Vud4Bb+Ue9dyp2l1XnUHfuPa8HVrVZ98BljcUkKYuE"
+REMOTE_CACHE_NAME: 0
+
+## Local Cache Configuration
+LOCAL_CACHE_LIB: "ristretto"
+LOCAL_CACHE_MAX_COST: 1073741824 #maximum cost of cache (1GB = 2 ^ 30 bits)
+LOCAL_CACHE_NUM_COUNTERS: 1e7 #number of keys to track frequency of items (10 milions)
+LOCAL_CACHE_BUFFER_ITEMS: 64 #number of keys per get buffer
+LOCAL_CACHE_METRICS: true #show statistics
+
+## Constant configuration
+JWT_EXPIRATION_TIME_HOURS: 168 # 7 days
+RATE_LIMIT_PER_SECOND: 20
+
+## Storage Configuration
+STORAGE_DRIVER: "minio"
+STORAGE_USE_SSL: true
+STORAGE_ACCESS_KEY: "AKIAQETG7W4XMAXEPWYV"
+STORAGE_SECRET_KEY: "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"
+STORAGE_REGION: "ap-northeast-1"
+STORAGE_BUCKET: "gear5"

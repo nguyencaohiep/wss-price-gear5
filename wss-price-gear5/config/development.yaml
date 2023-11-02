@@ -1,0 +1,31 @@
+# ## Server Configuration
+SERVER_NAME: "crawl_price_3rd"
+SERVER_IP: "127.0.0.1"
+SERVER_PORT: "8001"
+SERVER_STORE_PATH: "./config/stores"
+SERVER_UPLOAD_PATH: "./config/uploads"
+SERVER_UPLOAD_LIMIT: 8
+SERVER_LOG_LEVEL: "debug"
+
+## Database Configuration
+DB_DRIVER: "postgres"
+DB_HOST: "52.192.15.63"
+DB_PORT: "5432"
+DB_USER: "postgres"
+DB_PASSWORD: "!!nika-get-5-million-2023@@"
+DB_NAME: "gear5"
+
+# DB_DRIVER: "postgres"
+# DB_HOST: "127.0.0.1"
+# DB_PORT: "5432"
+# DB_USER: "postgres"
+# DB_PASSWORD: "password"
+# DB_NAME: "gear5_local"
+
+# WETH_ADDRESS: "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+# WBNB_ADDRESS: "0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c"
+ 
+
+DOMAIN_LOCAL: "https://api-admin.gear5.io/crawler"
+API_GET_INFO: "/crypto/get-info"
+API_UPDATE_PRICE: "/crypto/update-price"
